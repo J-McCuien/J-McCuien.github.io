@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lansing.html">Lansing</a></li>
+                <li><a href="detroit.html">Detroit</a></li>
+                <li><a href="ann_arbor.html">Ann Arbor</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Please fill in this form</h2>
+                <img src="Seal_of_Michigan.svg.png" alt="Official Seal of Michigan">
+                
+                <form id="contactForm" onsubmit="return compareEmail()">
+                    
+                    <label for="firstName">
+                        First Name:</label><br>
+                    
+                    <input type="text" id="firstName" name="firstName" placeholder="ex..Blake"><br><br>
+                    
+                    <label for="lastName">Last Name:</label><br>
+                    
+                    <input type="text" id="lastName" name="lastName" placeholder="ex..Corum"><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    
+                    <input type="email" id="email" name="email" placeholder="ex.2024NationalChamps@yahoo.com"><br><br>
+                    
+                    <label for="confirmEmail">Confirm Email:</label><br>
+                    
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="ex.2024NationalChamps@yahoo.com"><br><br>
+                    
+                    <label for="question">Question:</label><br>
+                    
+                    <textarea id="question" name="question" rows="4" placeholder="Are people from Michigan called Michiganders?"></textarea><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <aside>
+        </aside>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+        
+        function compareEmail() {
+            var email1 = document.getElementById('email').value;
+            var email2 = document.getElementById('confirmEmail').value;
+
+            if (email1 !== email2) {
+                alert("Error! Emails do not match.");
+                return false;
+            }
+            alert("Thank you!");
+            return true;
+        }
+    </script>
+    
+</body>
+</html>

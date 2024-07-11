@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+header, footer {
+    background-color: #FFCB05;
+    color: #00274C; 
+    padding: 1em;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+header h1 {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+}
+
+nav :hover {
+    color: #00274C;
+    background-color: #FFCB05;
+    width: 110px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: .25em;
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+main h2 {
+    position: relative;
+    transform: translateY(25%);
+}
+
+aside {
+    width: 200px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #FFCB05;
+}
+#lake-table {
+    float: right;
+    margin-right: 300px; 
+    width: 150px;
+}
+
+#lake-table th, #lake-table td {
+    border:1px solid #FFCB05;
+    text-align: left;
+}
